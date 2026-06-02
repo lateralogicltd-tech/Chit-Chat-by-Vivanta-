@@ -1,0 +1,40 @@
+{
+  "placeholderImages": [
+    {
+      "id": "ancient-egypt",
+      "description": "Ancient Egypt with pyramids and sphinx",
+      "imageUrl": "https://picsum.photos/seed/egypt/600/400",
+      "imageHint": "ancient egypt"
+    },
+    {
+      "id": "roman-empire",
+      "description": "Roman Empire colosseum and marble statues",
+      "imageUrl": "https://picsum.photos/seed/rome/600/400",
+      "imageHint": "roman empire"
+    },
+    {
+      "id": "medieval-knights",
+      "description": "Medieval castle and knights in armor",
+      "imageUrl": "https://picsum.photos/seed/knights/600/400",
+      "imageHint": "medieval castle"
+    },
+    {
+      "id": "samurai-japan",
+      "description": "Feudal Japan with samurai and cherry blossoms",
+      "imageUrl": "https://picsum.photos/seed/samurai/600/400",
+      "imageHint": "samurai japan"
+    },
+    {
+      "id": "renaissance",
+      "description": "Renaissance art and architecture in Florence",
+      "imageUrl": "https://picsum.photos/seed/renaissance/600/400",
+      "imageHint": "renaissance art"
+    },
+    {
+      "id": "viking-age",
+      "description": "Viking longships and dramatic fjords",
+      "imageUrl": "https://picsum.photos/seed/viking/600/400",
+      "imageHint": "viking ships"
+    }
+  ]
+}

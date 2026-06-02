@@ -1,0 +1,56 @@
+
+{
+  "entities": {
+    "Creation": {
+      "title": "Historical Creation",
+      "description": "A generated historical scene with characters.",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "era": { "type": "string" },
+        "characterIdeas": { "type": "string" },
+        "generatedCharacters": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "appearance": { "type": "string" },
+              "role": { "type": "string" },
+              "personalityTraits": { "type": "array", "items": { "type": "string" } }
+            }
+          }
+        },
+        "sceneDescription": { "type": "string" },
+        "generatedScenePrompt": { "type": "string" },
+        "timestamp": { "type": "number" }
+      },
+      "required": ["title", "era", "generatedCharacters", "generatedScenePrompt", "timestamp"]
+    },
+    "ContactMessage": {
+      "title": "Contact Message",
+      "description": "A message sent from the portfolio contact form.",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "message": { "type": "string" },
+        "timestamp": { "type": "number" }
+      },
+      "required": ["message", "timestamp"]
+    }
+  },
+  "auth": {
+    "providers": ["google.com"]
+  },
+  "firestore": {
+    "creations": {
+      "schema": "Creation",
+      "description": "Collection of historical scene creations."
+    },
+    "messages": {
+      "schema": "ContactMessage",
+      "description": "Collection of contact messages."
+    }
+  }
+}

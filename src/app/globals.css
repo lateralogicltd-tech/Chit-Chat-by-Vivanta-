@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 45 100% 98%; /* Soft Cream/Yellow */
+    --foreground: 222 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    --primary: 346 100% 62%; /* Playful Pink */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 199 89% 48%; /* Sky Blue */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 45 100% 90%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 43 100% 50%; /* Sunny Yellow */
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 45 100% 85%;
+    --input: 45 100% 85%;
+    --ring: 346 100% 62%;
+    --radius: 2rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-headline;
+  }
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.rainbow-text {
+  background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
